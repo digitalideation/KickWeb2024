@@ -1,16 +1,16 @@
-# KickWeb2023
+# KickWeb2024
 
 
 ![di logo](https://github.com/digitalideation/comppx_h2001/blob/master/docs/assets/images/di-logo-small.jpg?raw=true "di logo")
 
 
-# KickWeb - Spring 2023
+# KickWeb - Spring 2024
 
 The wiki includes resources & course notes for students attending KickWeb Module. <br/>
-https://github.com/digitalideation/KickWeb2023/wiki <br/><br/>
+https://github.com/digitalideation/KickWeb2024/wiki <br/><br/>
 
 Instructor: Hanna Züllig<br/>
-Term: Spring 2023, HSLU<br/>
+Term: Spring 2024, HSLU<br/>
 
 
 
