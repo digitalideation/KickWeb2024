@@ -1,0 +1,36 @@
+/*-----Tags----*/
+body{
+    background-color: black;
+    text-align: center;
+}
+
+.serifen{
+    font-family: Georgia, serif;
+}
+
+h1{
+    color:aquamarine;
+    font-size: 28px;
+}
+
+p{
+    color:blueviolet;
+    font-size: 16px;
+    
+}
+
+/*-----ID----*/
+#poetry{
+
+}
+
+/*-----Klassen----*/
+.first{
+
+}
+.second{
+
+}
+.third{
+
+}
