@@ -1,0 +1,36 @@
+/*-----Tags----*/
+body{
+    background-color:rgb(182, 184, 186);
+    margin:100px
+}
+
+h1{
+    background-color:DodgerBlue;
+}
+
+p{
+    margin-left:100PX;
+    border-style: groove;
+    
+
+}
+
+/*-----ID----*/
+#poetry{
+
+}
+
+/*-----Klassen----*/
+.first{
+    border-style: hidden;
+
+}
+.second{
+    border-style: hidden;
+
+}
+.third{
+    border-style: hidden;
+    
+
+}
