@@ -1,21 +1,23 @@
 /*-----Tags----*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
 
 
 body{
     background-color: black;
     color: white;
-    font-family: sans-serif;    
 }
 
 h1{
     border-style: dashed;
     border-color: white;   
     text-align: center;
+    font-family: "Micro 5", sans-serif;
 }
       
 p{
     text-align: center;
+    font-family: "Anta", sans-serif;    
 }
 
 /*-----ID----*/
