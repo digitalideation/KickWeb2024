@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background: radial-gradient(
+    168.32% 48.2% at 51.8% 50%,
+    #280008 0%,
+    #000 100%
+  );
+  height: 100vh;
+  color: #e31710;
+  font-family: "Inter", sans-serif;
+  padding: 10%;
+}
+
+h1 {
+  font-size: 5rem;
+}

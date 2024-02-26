@@ -1,0 +1,4 @@
+- Per Drag kann das isometrische Konstrukt verschoben werden.
+- Diverse Hovereffekte bei den einzelnen Titeln, evtl als Menu gestaltet
+- Farbverläufe je nach Curser-Position. (MouseX, MouseY)
+- Evtl. Animation von 2D zu 3D
