@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@400..700&display=swap');
+body {
+   background-color: #F0E2C5;
+   background-image: url("file:///C:/Users/jenni/Documents/modul_kickweb_f24/Tag1_modul_kickweb_f24/Plakat/Backround.jpg");
+}
+h1 {
+   text-align-last: right;
+   color: #44372D;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 20px;
+  }
+h2 {
+   text-align-last: center;
+   color:  #F0E2C5;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size: 250px;
+   background-color: #212021;
+   width: 1440px;
+   padding: 30px;
+}
+h3 {
+   text-align-last: right;
+   color: #44372D;
+   font-family: "Reem Kufi Fun", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 20px;
+  }
+h4  {
+   text-align-last: center;
+   color: #212021;
+   font-family: "Reem Kufi Fun", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 700;
+   font-style: normal;
+   font-size: 200px;
+
+}
+image{
+   width: max-content;
+   height: max-content;
+}
