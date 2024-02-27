@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Franie";
+  src: url("fonts/franieSemiBold.woff") format("woff");
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .poster {
+    text-align: center;
+    line-height: 0.1;
+    
+  }
+  
+  .word {
+    font-family: "Franie", Arial, sans-serif;
+    font-size: 200px;
+    color: #1095BC;
+    text-transform: uppercase;
+    letter-spacing: -18px;
+    
+  }
+  
+  .blue {
+    color: #22038F;
+  }
+
+  .red {
+    color: #E12402;
+  }
+
+  .yellow {
+    color: #EEC218;
+}
+
+  .white {
+  color: #E6E3D4;
+}
+
+  .watch-my {
+  font-size: 85px;
+  color: #E6E3D4;
+  font-family: "Franie", Arial, sans-serif; 
+  text-transform: uppercase;
+  position: relative;
+  top: -220px;
+}
+
+  .talk {
+  font-size: 45px;
+  color: #E6E3D4;
+  font-family: "Franie", Arial, sans-serif; 
+  text-transform: uppercase;
+  position: relative;
+  top: -115px;
+  left: 240px;
+  transform-origin: center;
+  transform: rotate(-270deg); /* Drehpunkt */
+}
