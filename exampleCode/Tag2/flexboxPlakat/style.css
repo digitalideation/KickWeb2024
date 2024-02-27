@@ -23,16 +23,28 @@ body{
     /*Proportionen A-Formate Breite zu Hoehe 1.4141--*/
     height:calc(1.4141*60vw);
 }
-
+section.titel{
+    font-size: 6vw;
+    text-align: center;
+}
 section.dotrow {
     background-color: var(--background);
-    padding: 3em;
+    padding: 3rem;
    /*---Tipp mit flexbox arbeiten :-) --*/
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+section.konzertinfo{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
 }
 
 .dot {
     border-radius: 50%;
     height: 150px;
+    width: 150px;
     background-color: var(--white);
     margin: 5px;
 }
