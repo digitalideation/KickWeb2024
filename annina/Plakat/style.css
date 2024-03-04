@@ -1,0 +1,34 @@
+/*-----Tags----*/
+body{
+    background-color: white;
+    /*transform: rotate(315deg);*/
+    
+}
+
+h1{
+    color:black;
+    text-align:left;
+    font-size: 20vh;
+  
+}
+
+
+/*-----ID----*/
+#box01{
+    grid-area: 
+}
+
+/*-----Klassen----*/
+
+.all{
+    display: grid;
+    grid-template-columns: repeat(11, calc(100vh / 11));
+    grid-template-rows: repeat(11, calc(100vh / 11));
+    font-size: 6vh;
+    gap: 20px
+
+}
+
+.black{
+    color: black;
+}
