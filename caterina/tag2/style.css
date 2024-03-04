@@ -1,0 +1,56 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #feda4a;
+    overflow: hidden;
+}
+  
+.poster {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+  
+.additional-text {
+    position: absolute;
+    font-size: 1.5vw;
+    color: #000;
+    white-space: nowrap;
+}
+  
+.text-1 { top: 10%; left: 10%; }
+.text-2 { top: 70%; left: 10%; }
+.text-3 { bottom: 10%; left: 10%; }
+  
+/* Animation for moving and rotating the word 'bill' */
+@keyframes moveAndRotate {
+    0%, 100% { top: 0; left: 0; transform: translate(0, 0) rotate(0deg); }
+    25% { top: 0; left: 100%; transform: translate(-100%, 0) rotate(90deg); }
+    50% { top: 100%; left: 100%; transform: translate(-100%, -100%) rotate(180deg); }
+    75% { top: 100%; left: 0; transform: translate(0, -100%) rotate(270deg); }
+}
+  
+.bill-text {
+    position: absolute;
+    font-size: 50vw; /* Significantly increased font size */
+    font-weight: bold;
+    color: #000;
+    text-transform: lowercase;
+    animation: moveAndRotate 20s linear infinite;
+}
+  
+/* Responsive */
+@media (max-width: 600px) {
+    .bill-text { font-size: 30vw; } /* Smaller size for smaller screens */
+}
+  
+@media (min-width: 601px) and (max-width: 1200px) {
+    .bill-text { font-size: 40vw; } /* Medium size for medium screens */
+}
+  
+@media (min-width: 1201px) {
+    .bill-text { font-size: 50vw; } /* Largest size for large screens */
+}

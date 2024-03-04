@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>bill Poster</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #feda4a;
+    overflow: hidden; /* Prevents scrolling */
+  }
+  .poster {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .bill-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20vw; /* Adjust size as needed */
+    font-weight: bold;
+    color: #000;
+    text-transform: lowercase;
+  }
+  /* Additional styles for other text */
+  .additional-text {
+    position: absolute;
+    font-size: 1.5vw; /* Adjust size as needed */
+    color: #000;
+    white-space: nowrap;
+  }
+  .text-1 { top: 10%; left: 10%; }
+  .text-2 { top: 70%; left: 10%; }
+  .text-3 { bottom: 10%; left: 10%; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="bill-text">bill</div>
+  <div class="additional-text text-1">max bill: werbegrafik und buchgestaltung 1930-1955</div>
+  <div class="additional-text text-2">museum für gestaltung zürich</div>
+  <div class="additional-text text-3">12.12.1998-7.3.1999</div>
+</div>
+<script>
+  function checkOverlap() {
+    const bill = document.querySelector('.bill-text');
+    const texts = document.querySelectorAll('.additional-text');
+    texts.forEach(text => {
+      if (isOverlapping(bill, text)) {
+        text.style.color = 'white';
+      } else {
+        text.style.color = 'black';
+      }
+    });
+  }
+
+  function isOverlapping(element1, element2) {
+    const rect1 = element1.getBoundingClientRect();
+    const rect2 = element2.getBoundingClientRect();
+    return !(rect1.right < rect2.left || 
+             rect1.left > rect2.right || 
+             rect1.bottom < rect2.top || 
+             rect1.top > rect2.bottom);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setInterval(checkOverlap, 100); // Check for overlap every 100ms
+  });
+</script>
+
+</body>
+</html>
