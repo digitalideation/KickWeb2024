@@ -3,8 +3,8 @@
 body {
   background: radial-gradient(
     168.32% 48.2% at 51.8% 50%,
-    #280008 0%,
-    #000 100%
+    #250000 0%,
+    #000000 100%
   );
   height: 100vh;
   color: #e31710;
@@ -12,6 +12,84 @@ body {
   padding: 10%;
 }
 
-h1 {
-  font-size: 5rem;
+.cube * {
+  position: absolute;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  /*border: solid 3px #e3171034;
+  background-color: rgba(255, 255, 255, 0.647);*/
+  margin: -13em;
+  width: 26em;
+  height: 26em;
+  top: 50%;
+  left: 50%;
+  padding: 0.2%;
+  user-select: none;
+}
+
+.face div:hover {
+  color: #710b07;
+  transition: 600ms;
+}
+
+/*.face-2,
+.face-3,
+.face-5 {
+  display: none;
+}*/
+
+.face.face-1 {
+  z-index: 3;
+}
+
+.face.face-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 2;
+}
+
+.face.face-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+  padding-top: 0.5%;
+}
+
+.face div {
+  position: relative;
+  font-size: 2.5em;
+  line-height: 1.1em;
+  transition: 600ms;
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.light-fnt {
+  font-weight: 400;
+}
+
+.heavy-fnt {
+  font-weight: 800;
+}
+
+.face-4 {
+  writing-mode: sideways-rl;
+  align-items: end;
+}
+
+.face-6 {
+  writing-mode: sideways-lr;
+  align-items: end;
 }
