@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-areas:
+                ". kopf kopf"
+                "main main main"
+                "aside foot foot"
+                "colophon colophon colophon";
+        }
+
+        .item {
+            border: 1px dotted red;
+            margin: 6px;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        .header {
+            grid-area: kopf;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .footer {
+            grid-area: foot;
+        }
+        .colophon{
+            grid-area: colophon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="item header">Header </div>
+        <div class="item main">Main Area <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/%28Orgueil%29_-_L%27%C3%89glise_Saint-Ferr%C3%A9ol_-_Voute_du_choeur.jpg/500px-%28Orgueil%29_-_L%27%C3%89glise_Saint-Ferr%C3%A9ol_-_Voute_du_choeur.jpg" alt="Orgueil - Saint Ferréol Church - Vault in trompe-l'oeil of the choir. "> </div>
+        <div class="item aside">Aside </div>
+        <div class="item footer">Footer </div>
+        <div class="item colophon">Impressum</div>
+    </div>
+</body>
+
+</html>
