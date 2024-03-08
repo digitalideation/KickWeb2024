@@ -1,0 +1,81 @@
+/*-----Tags----*/
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+@media only screen and (min-width: 1200px) {...} 
+
+body {
+    background-color: #e9eedd;
+    color: #9743e6;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*-----Text----*/
+#text {
+    text-align: end;
+}
+
+#hidden_text {
+    text-align: center;
+}
+
+/*-----Boxen----*/
+#box00 {
+    border: 5px solid #bae447;
+    background-color: #7e348a;
+    margin-bottom: 0.5rem;
+    min-height: 8rem;
+    max-width: 8rem;
+
+}
+
+#box01 {
+    border: 5px solid #bae447;
+    background-color: #7e348a;
+    margin-bottom: 0.5rem;
+    min-height: 8rem;
+    max-width: 8rem;
+}
+
+#box02 {
+    border: 5px solid #bae447;
+    background-color: #7e348a;
+    margin-bottom: 0.5rem;
+    min-height: 8rem;
+    max-width: 8rem;
+}
+
+#box03 {
+    border: 5px solid #bae447;
+    background-color: #7e348a;
+    margin-bottom: 0.5rem;
+    min-height: 8rem;
+    max-width: 8rem;
+}
+
+#box04 {
+    border: 5px solid #bae447;
+    background-color: #7e348a;
+    margin-bottom: 0.5rem;
+    min-height: 8rem;
+    max-width: 8rem;
+}
+
+#box05 {
+    border: 5px solid #bae447;
+    background-color: #7e348a;
+    margin-bottom: 0.5rem;
+    min-height: 8rem;
+    max-width: 8rem;
+}
+
+
+
+/*-----Klassen----*/
+.rectangle {
+    align-items: stretch;
+ }
