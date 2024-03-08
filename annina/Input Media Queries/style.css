@@ -1,0 +1,74 @@
+/*-----Default----*/
+body {
+    background-color: #e9eedd;
+    color: #9743e6;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*-----Text----*/
+#text {
+    text-align: end;
+}
+
+#hidden_text {
+    text-align: center;
+    color: #e9eedd;
+}
+
+
+/*-----Klassen----*/
+.flex-container {
+    display: flex;
+}
+
+.rectangle {
+    width: 8rem;
+    height: 8rem;
+    margin: auto;
+    border: 5px solid #e9eedd;
+    background-color: #e9eedd;
+}
+
+/*-----Tags----*/
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #add8e6;
+        font-size: 1vh;
+    }
+
+    #text {
+        text-align: center;
+    }
+
+    #hidden_text {
+        text-align: center;
+        color: #2c6d83;
+    }
+
+    .rectangle {
+        width: 8rem;
+        height: 8rem;
+        margin: auto;
+        border: 5px solid #bae447;
+        background-color: #7e348a;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: #095974;
+        font-size: 10vh;
+        color: #095974;
+    }
+
+    #hidden_text {
+        text-align: center;
+        color: #095974;
+    }
+
+    .rectangle {
+        border: 5px solid #095974;
+        background-color: #095974;
+    }
+}
