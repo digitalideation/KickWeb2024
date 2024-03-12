@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+    background-color: var(--background);
+}
+
+:root {
+    /* Custom Properties */
+    --white: #fff;
+    --background: #001B44;
+    --red: #FC151F;
+    --lightblue: #C6DDF0;
+    --yellow: #FFC857;
+    --grey: #666666;
+}
+
+/* 6x4 Grid*/
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 0.75fr 0.75fr 0.25fr 1fr 0.75fr;
+    grid-template-rows: repeat(4, 0.75fr);;
+    row-gap: 50px;
+    padding: 5px;
+    height: 100vh;
+}
+
+.F {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.text {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    color: var(--red);
+    }
+
+
+.L {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.O1 {
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.W1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.E {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.R1 {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.S {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.W {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.-- {
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.O {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.R {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
+
+.D {
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15vw;
+    color: var(--red);
+    }
