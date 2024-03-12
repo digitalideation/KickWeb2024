@@ -1,0 +1,147 @@
+@import url('https://use.typekit.net/mja5fbt.css');
+
+:root {
+    --background: rgb(248, 242, 234);
+    --color: red;
+}
+
+body {
+    font-family: "jaf-bernina-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0; /* Remove default margin */
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    background-color: var(--background);
+    grid-template-columns: repeat(8, 1fr); /* 8 columns with equal width */
+    grid-template-rows: repeat(11, 1fr); /* 11 rows with equal height */
+    gap: 0px; /* Adjust gap between grid items as needed */
+  }
+  
+  .grid-item {
+    padding: 0; /* Add padding to grid items */
+    margin: 0;
+    border: 2px solid rgb(255, 255, 255); /* Add border to grid items for better visualization */
+  }
+
+  .star{
+    background-color: var(--background);
+    justify-self: center;
+    padding-top: 30px;
+    font-size: 40px;
+  }
+
+  .B2{
+    background-color: var(--background);
+    justify-self: center;
+    font-size: 30px;
+    align-self: end;
+    
+  }
+
+  .CD2{
+    background-color: var(--background);
+    grid-column: 3 / 5;
+    grid-row: 2;
+    font-size: 30px;
+    justify-self: center;
+    align-self: end;
+  }
+
+  .DE2{
+    grid-column: 4 / 6;
+    grid-row: 2;
+    font-size: 30px;
+    align-self: end;
+    justify-self: center;
+  }
+
+  .E2{
+    grid-column: 5 / 6;
+    grid-row: 2;
+    align-self: end;
+    justify-self: center;
+    font-size: 30px;
+  }
+
+  .bigi{
+    font-size: 70px;
+    font-weight: bold;
+    justify-self: center;
+    grid-column: 3;
+    grid-row: 3;
+    align-self: end;
+  }
+
+  .CD3{
+    font-size: 30px;
+    grid-column: 3 / 5;
+    grid-row: 3;
+    justify-self: center;
+    align-self: end;
+  }
+
+  .E3{
+    font-size: 30px;
+    justify-self: center;
+    align-self: end;
+  }
+
+  .F3{
+    font-size: 30px;
+    justify-self: center;
+    align-self: end;
+  }
+
+  .G3{
+    font-size: 30px;
+    justify-self: center;
+    align-self: end;
+  }
+
+  .bigf{
+    font-size: 70px;
+    font-weight: bold;
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 4;
+    align-self: end;
+  }
+
+  .bigs{
+    font-size: 70px;
+    font-weight: bold;
+    align-self: end;
+    grid-column: 5;
+    grid-row: 4;
+  }
+
+  .bigh{
+    font-size: 70px;
+    font-weight: bold;
+    grid-column: 6;
+    grid-row: 4 / 6;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .UTS{
+    font-size: 25px;
+    grid-column: 7 / 9;
+    grid-row: 4;
+    justify-self: center;
+  }
+
+  .FM{
+    font-size: 25px;
+    grid-column: 2;
+    grid-row: 5 / 7;
+    transform: rotate(-90deg);
+    justify-self: center;
+  }
+  
+  
+
