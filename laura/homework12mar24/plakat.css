@@ -1,0 +1,149 @@
+/** BACKGROUND**/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/** TEXTFARBE **/
+#poster {
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    background-color: #000526;
+    padding: 2%;
+}
+
+
+/** INTRO**/
+#info {
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 10%;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    order: 1;
+}
+
+h1 {
+    padding-left: 2%;
+    font-size: 2.5em;
+    order: 2;
+}
+
+/** GRID für PFEILE **/
+#grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* Creates 6 columns */
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    order: 3;
+}
+
+/** PFEILE VIOLETT**/
+.arrow {
+    background-color: #ce00c3;
+    width: 6em;
+    height: 6em;
+    clip-path: polygon(0% 25%, 0% 100%, 75% 100%, 75% 75%, 45% 75%, 100% 19%, 81% 0%, 26% 55%, 26% 25%);
+}
+
+.arrowWhite {
+    background-color: #ffffff;
+    width: 6em;
+    height: 6em;
+    clip-path: polygon(0% 25%, 0% 100%, 75% 100%, 75% 75%, 45% 75%, 100% 19%, 81% 0%, 26% 55%, 26% 25%);
+}
+
+/** WEITERE PFEILE AB 36 **/
+@media screen and (max-width: 660px) {
+    .arrow {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 834px) {
+    .arrow:nth-child(n+37) {
+        display: none;
+    }
+}
+
+/** RESPONSIVES DESIGN - DESKTOP **/
+@media screen and (min-width: 835px) {
+
+    #info {
+        font-size: 1.5em;
+        border-bottom: none;
+        border-top: none;
+    }
+
+    h1 {
+        font-size: 5em;
+        padding-bottom: 1.5em;
+        border-bottom: 7px solid #ffffff;
+    }
+
+
+    .arrow {
+        width: 6em;
+        height: 6em;
+    }
+
+    .arrowWhite {
+        width: 6em;
+        height: 6em;
+        background-color: #ce00c3;
+    }
+
+    #grid {
+        grid-template-columns: repeat(10, 1fr);
+        padding-bottom: 4.5em;
+        border-bottom: 7px solid #ffffff;
+    }
+
+}
+
+/** RESPONSIVES DESIGN - SMARTPHONE **/
+@media screen and (max-width: 660px) {
+    body{
+        background-color: #000526;
+
+    }
+
+    #info {
+        font-size: 0.8em;
+        display: grid;
+        border-bottom: none;
+        border-top: none;
+        border-left: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        margin-right: 50%;
+        position: absolute;
+        background-color: #000526;
+        z-index: 1;
+        top: 24%;
+        right: -45%;
+    }
+
+    h1{
+        font-size: 2em;
+        border-top: 1px solid #ffffff;
+        padding-top: 1em;
+    }
+
+    .arrow {
+        width: 3em;
+        height: 3em;
+    }
+
+    .arrowWhite {
+        width: 3em;
+        height: 3em;
+    }
+    
+}

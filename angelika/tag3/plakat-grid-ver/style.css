@@ -1,0 +1,28 @@
+@import url('https://use.typekit.net/mja5fbt.css');
+
+:root {
+    --background: rgb(248, 242, 234);
+    --color: red;
+}
+
+body {
+    font-family: "jaf-bernina-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0; /* Remove default margin */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns with equal width */
+    grid-template-rows: repeat(11, 1fr); /* 11 rows with equal height */
+    gap: 0px; /* Adjust gap between grid items as needed */
+  }
+  
+  .grid-item {
+    background-color: var(--background); /* Set background color for grid items */
+    padding: 20px; /* Add padding to grid items */
+    border: 2px solid rgb(255, 255, 255); /* Add border to grid items for better visualization */
+  }
+  
+
