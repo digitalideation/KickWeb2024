@@ -1,0 +1,38 @@
+body{
+    background-color: #FC7A1E;
+}
+.parentcontainer{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    gap: 5px;
+    box-sizing: border-box;
+    font-size: 60px;
+    grid-template-areas: 
+    "head head head"
+    "aside main main"
+    "foot foot fott";
+} 
+
+.child{
+    background-color: #485696;
+    color: #E7E7E7;
+}
+
+.header{
+    grid-area: head;
+
+}
+
+.sidebar{
+    grid-area: aside;
+}
+
+.maincontent{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: foot;
+}
+
