@@ -1,0 +1,53 @@
+body{
+    background-color: #FC7A1E;
+}
+
+.parentcontainer{
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr); 
+    gap: 5px;
+    font-size: 60px;
+    box-sizing: border-box;
+    padding: 100px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.child{
+    background-color: #485696;
+    color: #E7E7E7;
+}
+
+.hallo{ 
+    grid-row: 1/5;
+    grid-column: 1/5;
+}
+
+.zu{
+    background-color: #F24C00;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.meiner{
+}
+
+.grid{
+}
+
+.repetition{
+}
+
+.am{
+}
+
+.datum{ 
+}
+
+.enjoy{ 
+}
+
+
+.:D{ 
+}
