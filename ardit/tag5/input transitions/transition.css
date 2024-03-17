@@ -18,6 +18,8 @@
     text-align: center;
     background-color: #3498db;
     transition: width 2s, background-color 1s ease-in-out;
+    transition-property: all;
+
   }
   
   .square:hover{
@@ -40,6 +42,8 @@
   .circle:hover{
     background-color: #e74c3c;
     transform: translate(50px);
+    transition-property: all;
+
   }
 
   .box {
@@ -52,5 +56,18 @@
   
   .box:hover {
     left: calc(100% - 100px); /* Neue Position beim Hover */
+  }
+  
+  .box2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    left: 0; /* Startposition */
+    transition: left 1s ease-in-out; /* Übergangseffekt für die 'left' Eigenschaft */
+  }
+  
+  .box2:hover {
+    left: 500px; /* Neue Position beim Hover */
   }
   
