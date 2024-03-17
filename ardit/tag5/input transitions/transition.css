@@ -39,5 +39,18 @@
 
   .circle:hover{
     background-color: #e74c3c;
-    transform: translate(100px);
+    transform: translate(50px);
   }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    transition: left 2s ease-in-out; /* Übergangseffekt für die 'left' Eigenschaft */
+  }
+  
+  .box:hover {
+    left: calc(100% - 100px); /* Neue Position beim Hover */
+  }
+  
