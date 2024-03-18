@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    /* CSS Angaben über Custom Properties definieren, -> zentraler Ort, um Werte zu ändern */
+    --white: #fff;
+    --background: #e4007b;
+    --dark: #6d0039;
+    --bright: #c10069;
+    --medium: #a00058;
+    --pink:#ff008c;
+    --grey:#666666;
+}
+
+body{
+    font-family: 'Roboto';
+ 
+}
+
+
+
+section.titel{
+    font-size: 6vw;
+    text-align: center;
+}
+
+
+section.dotrow {
+    background-color: var(--background);
+    padding: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 1em;
+    margin-right: 1em;
+    gap: 1rem;
+
+
+
+}
+
+
+section.konzertinfo{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    font-size: 1.3vw;
+
+}
+
+.dotsmall {
+    border-radius: 100%;
+    height: 7px;
+    width: 7px;
+    background-color: var(--pink);
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  
+    
+}
+
+
+.dotsmaller {
+    border-radius: 100%;
+    height: 5px;
+    width: 5px;
+    background-color: var(--pink);
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+   
+    
+}
+
+.dot {
+    border-radius: 60%;
+    height: 120px;
+    width: 120px;
+    background-color: var(--white);
+  
+}
+
+.rosa{
+   
+    background-color: var(--bright);
+}
+
+.medium{
+
+    background-color: var(--medium);
+}
+
+.dark{
+    background-color: var(--dark); 
+}
+
+.pink{
+    background-color: var(--pink);
+}
+
+section.musicstyles1{
+
+    font-size: 2.3vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    white-space: nowrap;
+}
+
+section.sonstigeInfo{
+
+    font-size: 1.7vw;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    white-space: nowrap;
+   
+}
+
+
