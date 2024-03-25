@@ -1,0 +1,118 @@
+/** ALLGEMEIN**/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.scroll-container {
+    display: flex; /* Verwende Flexbox */
+    justify-content: flex-start; /* Horizontale Ausrichtung linksbündig */
+    width: 100%;
+    height: 100%;
+    overflow-x: auto; /* Erlaube horizontales Scrollen */
+    overflow-y: hidden; /* Verhindere vertikales Scrollen */
+    background-color: #000526;
+}
+
+.containerUnderground,
+.arrow,
+.Metrostation {
+    flex-shrink: 0; /* Verhindere, dass die Elemente schrumpfen, wenn nicht genügend Platz vorhanden ist */
+    margin-left: 10px; /* Abstand zwischen den Elementen */
+}
+
+/** HEADER **/
+.heading {
+    font-size: 3em;
+    padding-top: 3%;
+    padding-left: 5%;
+    animation-name: flashAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+}
+
+@keyframes flashAnimation {
+    0% {
+        color: #ffffff;
+    }
+
+    50% {
+        color: #CE00C3;
+    }
+
+    100% {
+        color: #ffffff;
+    }
+}
+
+
+/** UNDERGROUND LOGO **/
+.underground {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+
+    /** LOGO ANIMATION NACH 10 SEKUNDEN **/
+    opacity: 0;
+    animation-name: appearLogo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes appearLogo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/** CONTAINER UNDERGROUND **/
+.containerUnderground {
+    display: grid;
+}
+
+/** ARROW **/
+.arrow {
+    margin-top: -28%;
+    padding: 0;
+    text-align: center;
+    color: #CE00C3;
+    rotate: -90deg;
+    float: right;
+}
+
+/** METRO STATION // BACKGROUND **/
+.Metrostation {
+    width: 800%;
+}
+
+/** METRO/TRAIN **/
+#metro {
+    width: 80%;
+    position: absolute;
+    margin-top: -35%;
+    animation-name: moveMetro;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes moveMetro {
+    0% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: -112%;
+    }
+}
