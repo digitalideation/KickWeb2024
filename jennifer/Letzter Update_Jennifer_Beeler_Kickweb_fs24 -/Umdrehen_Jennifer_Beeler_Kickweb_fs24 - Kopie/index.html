@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Im a poster</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <section class="T">
+        <div class="cursor"></div>
+        <script type="text/javascript">
+        const cursor = document.querySelector(".cursor");
+        var timeout; 
+        document.addEventListener("mousemove",(e) =>{
+        let x = e.pageX;
+        let y = e.pageY;
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+        cursor.style.display = "block";
+
+        function mouseStopped(){
+          cursor.style.display = "none";
+        }
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped,1000);
+    });
+    document.addEventListener("mouseout",() => {
+        cursor.style.display = "none";
+    });
+        </script>
+         <div class="parentcontainer">
+        <div class="child flip-card start">
+            <div class="flip-card-inner">
+                <div class="child flip-card-front">T</div> 
+                <div class="child flip-card-back">T</div> 
+            </div>
+        </div> 
+        <div class="child flip-card Y">
+            <div class="flip-card-inner">
+            <div class="child flip-card-front">Y</div> 
+            <div class="child flip-card-back">Y</div> 
+            </div>
+        </div>
+            <div class="child flip-card P1">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">P</div> 
+                <div class="child flip-card-back">P</div> 
+                </div>
+            </div>
+            <div class="child flip-card O">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">O</div> 
+                <div class="child flip-card-back">O</div> 
+                </div>
+            </div>
+            <div class="child flip-card G">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">G</div> 
+                <div class="child flip-card-back">G</div> 
+                </div>
+            </div>
+            <div class="child flip-card R">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">R</div> 
+                <div class="child flip-card-back">R</div> 
+                </div>
+            </div>
+            <div class="child flip-card A">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">A</div> 
+                <div class="child flip-card-back">A</div> 
+                </div>
+            </div>
+            <div class="child flip-card P">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">P</div> 
+                <div class="child flip-card-back">P</div> 
+                </div>
+            </div>
+            <div class="child flip-card H">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">H</div> 
+                <div class="child flip-card-back">H</div> 
+                </div>
+            </div>
+            <div class="child flip-card I">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">I</div> 
+                <div class="child flip-card-back">I</div> 
+                </div>
+            </div>
+            <div class="child flip-card E">
+                <div class="flip-card-inner">
+                <div class="child flip-card-front">E</div> 
+                <div class="child flip-card-back">E</div> 
+                </div>
+            </div>
+    </div>
+    </section>
+</body>
+</html>
