@@ -1,0 +1,70 @@
+body {
+    background-color: #ecca07;
+    font-size: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* [ON BIG SCREEN] */
+#hamnav {
+    width: 100%; /* Use full width */
+    background: #000000;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#hamitems {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100vh; /* Full height of the viewport */
+    list-style: none; /* Remove list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#hamitems a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Space out the items */
+    padding: 10px 20px; /* Padding for clickable area */
+    animation: blinker 3s linear infinite; /* Blinking animation */
+}
+
+/* Define the Blinking Animation */
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+/* Hover effect - Stops blinking and underlines text */
+#hamitems a:hover {
+    text-decoration: underline;
+    animation: none; /* Stop blinking on hover */
+}
+
+/* Hamburger menu and small screen adjustments */
+#hamnav label,
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    /* Small screen adjustments */
+    #hamitems {
+        flex-direction: column; /* Stack vertically */
+        height: auto; /* Adjust height for small screens */
+    }
+    #hamitems a {
+        margin: 5px 0; /* Adjust spacing for small screens */
+    }
+    #hamnav label { 
+        display: inline-block; 
+        color: white;
+        background: #ffffff;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: flex; }
+}
